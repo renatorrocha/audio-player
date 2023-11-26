@@ -5,8 +5,8 @@ type Props = {
 
 export default function Cards({ title, description }: Props) {
   return (
-    <p>
-      <strong>{title}</strong> - {description}
+    <p className="text-xl text-start lg:text-2xl">
+      <span className="font-semibold">{title}</span> - {description}
     </p>
   )
 }

@@ -1,8 +1,5 @@
 'use client'
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
-import Image from 'next/image'
-import Link from 'next/link'
+
 import ButtonAction from './components/ButtonAction'
 import Cards from './components/Cards'
 
@@ -26,9 +23,11 @@ export default function Home() {
     typeof Audio !== 'undefined' ? new Audio('cards-12-13.m4a') : undefined
 
   return (
-    <main className="flex justify-center items-center flex-col my-6 gap-4 lg:gap-6">
-      <h1 className="text-center text-3xl font-bold">MUNARI CARDS</h1>
-      <div className="flex flex-col text-xl text-start mx-6 lg:mx-32 lg:text-2xl gap-12">
+    <main className="flex justify-center items-center flex-col gap-4 lg:gap-6">
+      <h1 className="text-center text-2xl font-bold lg:text-3xl">
+        MUNARI CARDS
+      </h1>
+      <div className="flex flex-col mx-6 lg:mx-32 gap-8">
         <ButtonAction audio={audio1} />
 
         <Cards
