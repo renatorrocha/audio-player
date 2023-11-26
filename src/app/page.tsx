@@ -7,12 +7,24 @@ import ButtonAction from './components/ButtonAction'
 import Cards from './components/Cards'
 
 export default function Home() {
-  const audio1 = new Audio('cards-1-3.m4a')
-  const audio2 = new Audio('cards-4-5.m4a')
-  const audio3 = new Audio('cards-6-7.m4a')
-  const audio4 = new Audio('cards-8-9.m4a')
-  const audio5 = new Audio('cards-10-11.m4a')
-  const audio6 = new Audio('cards-12-13.m4a')
+  const audio1 =
+    typeof Audio !== 'undefined' ? new Audio('cards-1-3.m4a') : undefined
+
+  const audio2 =
+    typeof Audio !== 'undefined' ? new Audio('cards-4-5.m4a') : undefined
+
+  const audio3 =
+    typeof Audio !== 'undefined' ? new Audio('cards-6-7.m4a') : undefined
+
+  const audio4 =
+    typeof Audio !== 'undefined' ? new Audio('cards-8-9.m4a') : undefined
+
+  const audio5 =
+    typeof Audio !== 'undefined' ? new Audio('cards-10-11.m4a') : undefined
+
+  const audio6 =
+    typeof Audio !== 'undefined' ? new Audio('cards-12-13.m4a') : undefined
+
   return (
     <main className="flex justify-center items-center flex-col my-6 gap-4 lg:gap-6">
       <h1 className="text-center text-3xl font-bold">MUNARI CARDS</h1>
