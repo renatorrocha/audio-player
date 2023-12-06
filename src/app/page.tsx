@@ -1,26 +1,30 @@
 'use client'
 
 import ButtonAction from './components/ButtonAction'
-import Cards from './components/Cards'
+import TextCards from './components/TextCards'
 
 export default function Home() {
   const audio1 =
-    typeof Audio !== 'undefined' ? new Audio('cards-1-3.m4a') : undefined
+    typeof Audio !== 'undefined' ? new Audio('audios/cards-1-3.m4a') : undefined
 
   const audio2 =
-    typeof Audio !== 'undefined' ? new Audio('cards-4-5.m4a') : undefined
+    typeof Audio !== 'undefined' ? new Audio('audios/cards-4-5.m4a') : undefined
 
   const audio3 =
-    typeof Audio !== 'undefined' ? new Audio('cards-6-7.m4a') : undefined
+    typeof Audio !== 'undefined' ? new Audio('audios/cards-6-7.m4a') : undefined
 
   const audio4 =
-    typeof Audio !== 'undefined' ? new Audio('cards-8-9.m4a') : undefined
+    typeof Audio !== 'undefined' ? new Audio('audios/cards-8-9.m4a') : undefined
 
   const audio5 =
-    typeof Audio !== 'undefined' ? new Audio('cards-10-11.m4a') : undefined
+    typeof Audio !== 'undefined'
+      ? new Audio('audios/cards-10-11.m4a')
+      : undefined
 
   const audio6 =
-    typeof Audio !== 'undefined' ? new Audio('cards-12-13.m4a') : undefined
+    typeof Audio !== 'undefined'
+      ? new Audio('audios/cards-12-13.m4a')
+      : undefined
 
   return (
     <main className="flex justify-center items-center flex-col gap-4 lg:gap-6">
@@ -30,7 +34,7 @@ export default function Home() {
       <div className="flex flex-col mx-6 lg:mx-32 gap-8">
         <ButtonAction audio={audio1} />
 
-        <Cards
+        <TextCards
           title="CARD 1"
           description='Introdução: Bem-vindo(a) à jornada do
           design, onde exploraremos a metodologia inovadora de Bruno Munari, do
@@ -40,7 +44,7 @@ export default function Home() {
           inclusão!'
         />
 
-        <Cards
+        <TextCards
           title="CARD 2"
           description="Problema: Comece pelo essencial, sintetize
           de forma simples a questão; Acessibilidade visual em jogos. Entender
@@ -48,7 +52,7 @@ export default function Home() {
           impactantes."
         />
 
-        <Cards
+        <TextCards
           title="CARD 3"
           description="Definição do Problema: No âmbito de Munari
           devemos definir com clareza o que é problema, a acessibilidade visual
@@ -60,7 +64,7 @@ export default function Home() {
 
         <ButtonAction audio={audio2} />
 
-        <Cards
+        <TextCards
           title="CARD 4"
           description="Componentes do problema: É de extrema
           importancia compreender quais partes estruturam o problema para
@@ -71,7 +75,7 @@ export default function Home() {
           de Munari."
         />
 
-        <Cards
+        <TextCards
           title="CARD 5"
           description="Coleta de Dados: O proximo passo é coletar
           dados. Para abordar a acessibilidade visual em jogos, mergulhe em
@@ -82,7 +86,7 @@ export default function Home() {
 
         <ButtonAction audio={audio3} />
 
-        <Cards
+        <TextCards
           title="CARD 6"
           description="Criatividade: No caminho de Munari, a
           criatividade é a ferramenta essencial. Para abordar a acessibilidade
@@ -92,7 +96,7 @@ export default function Home() {
           metodologia de Munari."
         />
 
-        <Cards
+        <TextCards
           title="CARD 7"
           description="Materiais e Teconlogia: Seguindo a abordagem
           de Munari, a escolha cuidadosa de materiais é crucial. Neste projeto,
@@ -104,7 +108,7 @@ export default function Home() {
 
         <ButtonAction audio={audio4} />
 
-        <Cards
+        <TextCards
           title="CARD 8"
           description="Experimentação: Munari nos conduz à fase
           vital da experimentação. Testar e ajustar são essenciais ao abordar a
@@ -113,7 +117,7 @@ export default function Home() {
           que cada elemento sirva à inclusão e à experiência do jogador."
         />
 
-        <Cards
+        <TextCards
           title="CARD 9"
           description="Modelo: Da experimentação, emerge a fase de
           apresentar modelos. Inspirados por Munari, revelamos opções
@@ -124,7 +128,7 @@ export default function Home() {
         />
 
         <ButtonAction audio={audio5} />
-        <Cards
+        <TextCards
           title="CARD 10"
           description="Verificação Na etapa de verificação,
           apresentamos modelos a potenciais usuários, buscando adequação aos
@@ -133,7 +137,7 @@ export default function Home() {
           em jogos, refletindo o compromisso da metodologia com a experiência
           inclusiva e centrada no usuário."
         />
-        <Cards
+        <TextCards
           title="CARD 11"
           description="Desenhos de Construção: Chegamos à fase de
           desenho de construção, onde precisão é chave. Munari nos guia na
@@ -145,7 +149,7 @@ export default function Home() {
         />
 
         <ButtonAction audio={audio6} />
-        <Cards
+        <TextCards
           title="CARD 12"
           description="Solução A materialização da visão! Munari
           orienta a apreciar a solução final, resultado da jornada de design. Na
@@ -154,7 +158,7 @@ export default function Home() {
           da metodologia de Munari. O design atinge seu ápice, conectando-se ao
           usuário de forma inclusiva."
         />
-        <Cards
+        <TextCards
           title="CARD 13"
           description="Conclusão: Concluindo a jornada de estudo
           sobre Munari, percebemos que sua metodologia não é apenas uma
